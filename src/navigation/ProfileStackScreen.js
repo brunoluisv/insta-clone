@@ -3,18 +3,18 @@ import { Image } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Notify from '../pages/Notify'
+import Profile from '../pages/Profile'
 
 import logoTitle from '../assets/font.png';
 
 const Stack = createStackNavigator();
 
-const NotifyStackScreen = () => {
+const ProfileStackScreen = () => {
   return(
     <Stack.Navigator>
       <Stack.Screen 
-        name="Notify" 
-        component={Notify}
+        name="Profile" 
+        component={Profile}
         options={{
           headerTintColor: '#FFF',
           headerStyle: {
@@ -36,4 +36,4 @@ const NotifyStackScreen = () => {
   )
 }
 
-export default NotifyStackScreen;
+export default ProfileStackScreen;
