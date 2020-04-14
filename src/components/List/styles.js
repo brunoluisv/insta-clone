@@ -31,5 +31,12 @@ export default StyleSheet.create({
   picture: {
     width: '100%',
     height: 400
+  },
+  footer: {
+    flexDirection: 'row',
+    backgroundColor: '#181818',
+    height: 50,
+    padding: 10,
+    alignItems: 'center'
   }
 });

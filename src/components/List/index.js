@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { View, Text, FlatList, Image } from 'react-native';
-import { SimpleLineIcons } from '@expo/vector-icons';
+import { SimpleLineIcons, EvilIcons, Feather } from '@expo/vector-icons';
 import styles from './styles';
 
 const List = () => {
@@ -48,13 +48,21 @@ const List = () => {
           <View style={styles.options}>
             <SimpleLineIcons name="options-vertical" size={20} color="#FFF"/>
           </View>
-        </View>      
+        </View>  
         
         <View>
           <Image 
             style={styles.picture}
             source={{ uri: item.picture }}
           />
+        </View>
+
+        <View style={styles.footer}>
+          <EvilIcons name="heart" size={46} color="#FFF" />
+          <EvilIcons name="comment" size={46} color="#FFF" />
+          <Feather name="send" size={32} color="#FFF" style={{marginLeft: 8, marginTop: 8}} />
+        
+          <Feather name="bookmark" size={36} color="#FFF" style={{marginLeft: 230, marginTop: 8}} />
         </View>
       </View>
     );
