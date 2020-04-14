@@ -3,13 +3,19 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   header: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 20,
     alignItems: 'center',
-    marginBottom: 15,
-    backgroundColor: '#070809'
+    backgroundColor: '#070809',
+    padding: 10
   },
-  userInfo: {},
+  userInfo: {
+    marginLeft: 20,
+    width: 250
+  },
+  avatar: {
+    height: 36,
+    width: 36,
+    borderRadius: 18
+  },
   username: {
     fontSize: 16,
     color: '#F5F6F7',
@@ -19,7 +25,9 @@ export default StyleSheet.create({
     fontSize: 14,
     color: '#F5F6F7'
   },
-  options: {},
+  options: {
+    marginLeft: 65
+  },
   picture: {
     width: '100%',
     height: 400
