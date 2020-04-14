@@ -5,11 +5,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Feather, Entypo, FontAwesome } from '@expo/vector-icons';
 
-import HomeStackScreen from './navigation/HomeStackScreen';
-import NotifyStackScreen from './navigation/NotifyStackScreen';
-import SearchStackScreen from './navigation/SearchStackScreen';
-import ProfileStackScreen from './navigation/ProfileStackScreen';
-import PostStackScreen from './navigation/PostStackScreen';
+import Home from './pages/Home';
+import Notify from './pages/Notify';
+import Search from './pages/Search';
+import Profile from './pages/Profile';
+import Post from './pages/Post';
 
 const Tabs = createBottomTabNavigator();
 
@@ -30,7 +30,7 @@ const Routes = () => {
       >
         <Tabs.Screen 
           name="Home" 
-          component={HomeStackScreen} 
+          component={Home} 
           options={{
             tabBarIcon: () => (
               <Entypo name="home" size={30} color="#FFF" style={{ padding: 20 }}/>
@@ -39,7 +39,7 @@ const Routes = () => {
         />
         <Tabs.Screen 
           name="Search" 
-          component={SearchStackScreen} 
+          component={Search} 
           options={{
             tabBarIcon: () => (
               <FontAwesome name="search" size={30} color="#FFF" style={{ padding: 20 }}/>
@@ -48,7 +48,7 @@ const Routes = () => {
         />
         <Tabs.Screen 
           name="Post" 
-          component={PostStackScreen} 
+          component={Post} 
           options={{
             tabBarIcon: () => (
               <FontAwesome name="plus-square-o" size={34} color="#FFF"/>
@@ -57,7 +57,7 @@ const Routes = () => {
         />
         <Tabs.Screen 
           name="Notify" 
-          component={NotifyStackScreen} 
+          component={Notify} 
           options={{
             tabBarIcon: () => (
               <FontAwesome name="heart" size={30} color="#FFF" style={{ padding: 20 }}/>
@@ -66,7 +66,7 @@ const Routes = () => {
         />
         <Tabs.Screen 
           name="Profile" 
-          component={ProfileStackScreen} 
+          component={Profile} 
           options={{
             tabBarIcon: () => (
               <FontAwesome name="user" size={30} color="#FFF" style={{ padding: 20 }}/>

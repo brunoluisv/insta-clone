@@ -2,12 +2,16 @@ import React from 'react';
 import { View, Text } from 'react-native';
 
 import styles from './styles';
+import Header from '../../components/Header';
 
 const Profile = () => {
   return (
-    <View style={styles.container}>
-      <Text>Profile</Text>
-    </View>
+    <>
+      <Header />
+      <View style={styles.container}>
+        <Text>Profile</Text>
+      </View>
+    </>
   );
 }
 
